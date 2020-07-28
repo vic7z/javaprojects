@@ -57,5 +57,6 @@ public class Album {
             System.out.println("["+i+"]:"+songsIterator.next().toString());
             i++;
         }
+        System.out.println("==============================");
     }
 }
