@@ -11,6 +11,10 @@ public class Bank {
         branches=new ArrayList<>();
     }
 
+    public Bank() {
+        this(null);
+    }
+
     public boolean addBranch(Branch branch){
         if(findBranch(branch)<0){
             this.branches.add(branch);

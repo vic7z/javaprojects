@@ -10,16 +10,7 @@ public class Main {
     public static void main(String[] args) {
         albums = new ArrayList<>();
         playLists = new LinkedList<>();
-
-
-        Album album = new Album("aaa", "sdsdf");
-        album.addSongs("sdf", 5.3);
-        album.addSongs("ewtf", 12.1);
-        album.addSongs("sfrtg", 5.3);
-        albums.add(album);
         printMainMenu();
-
-
     }
 
 
@@ -63,6 +54,7 @@ public class Main {
         ListIterator<Songs> songsListIterator = songs.listIterator();
         while (songsListIterator.hasNext()) {
             System.out.println(songsListIterator.next().toString());
+            
         }
     }
 
