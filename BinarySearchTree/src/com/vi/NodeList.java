@@ -1,14 +1,23 @@
 package com.vi;
 
-public class Node extends  item {
+public class NodeList extends  item {
 
-    public Node(Object value) {
+    public NodeList(Object value) {
         super(value);
     }
 
     @Override
-    item left() {
+    item leftChild() {
         return this.leftNode;
+    }
+
+    @Override
+    int compareTo(item item) {
+        if(item!=null){
+            return (((String)this.getValue()).compareTo((String)item.getValue()));
+        }else {
+            return -1;
+        }
     }
 
     @Override
@@ -18,17 +27,15 @@ public class Node extends  item {
     }
 
     @Override
-    item right() {
+    item rightChild() {
         return this.rightNode;
     }
 
     @Override
     item setRight(item item) {
-        return null;
+        this.rightNode=item;
+        return this.rightNode;
     }
 
-    @Override
-    public void setValue(Object value) {
-        super.setValue(value);
-    }
+
 }

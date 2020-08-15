@@ -2,10 +2,10 @@ package com.vi;
 
 import org.jetbrains.annotations.NotNull;
 
-public class BST implements Node {
+public class searchTree implements Node {
     private item root=null;
 
-    public BST(item root) {
+    public searchTree(item root) {
         this.root = root;
     }
 
