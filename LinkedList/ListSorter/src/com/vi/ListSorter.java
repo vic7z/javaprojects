@@ -11,19 +11,22 @@ public class ListSorter {
 
     public ListSorter() {
 
-        linkedList=new LinkedList<>();
+        linkedList = new LinkedList<>();
     }
-    public void add(int number){
+
+    public void add(int number) {
         linkedList.add(number);
     }
-    public void printList(){
-        Iterator<Integer> i=linkedList.listIterator();
-        while (i.hasNext()){
+
+    public void printList() {
+        Iterator<Integer> i = linkedList.listIterator();
+        while (i.hasNext()) {
             System.out.println(i.next());
 
         }
     }
-    public void sorList(){
+
+    public void sorList() {
         linkedList.sort(Comparator.naturalOrder());
     }
 }

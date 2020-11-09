@@ -3,7 +3,7 @@ package com.vi;
 
 public class Contact {
     private String name;
-    private String  number;
+    private String number;
 
     public Contact(String name, String number) {
         this.name = name;
@@ -11,7 +11,7 @@ public class Contact {
     }
 
     public Contact() {
-        this(null,null);
+        this(null, null);
     }
 
     public String getName() {

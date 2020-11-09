@@ -1,15 +1,17 @@
 import java.util.*;
-public class SpeedConverter{
-    public static long toMilesPerHour(double kilometersPerHour){
-        if(kilometersPerHour<0){
+
+public class SpeedConverter {
+    public static long toMilesPerHour(double kilometersPerHour) {
+        if (kilometersPerHour < 0) {
             int i = -1;
             return i;
-        }else{
+        } else {
             return Math.round(kilometersPerHour / 1.609);
         }
     }
-    public static void printConversion(double kilometersPerHour){
-        long miles=toMilesPerHour(kilometersPerHour);
-        System.out.println(kilometersPerHour+"km/h "+miles+ "mi/h");
+
+    public static void printConversion(double kilometersPerHour) {
+        long miles = toMilesPerHour(kilometersPerHour);
+        System.out.println(kilometersPerHour + "km/h " + miles + "mi/h");
     }
 }

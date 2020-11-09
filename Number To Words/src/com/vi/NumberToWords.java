@@ -3,17 +3,17 @@ package com.vi;
 public class NumberToWords {
 
     public static void numberToWords(int number) throws IllegalStateException {
-        if(number<0){
+        if (number < 0) {
             System.out.println("Invalid Value");
-        }else {
-            int digitCount=getDigitCount(number);
-            int reverse=reverse(number);
-            while (digitCount>0){
-                int num=reverse%10;
-                reverse/=10;
+        } else {
+            int digitCount = getDigitCount(number);
+            int reverse = reverse(number);
+            while (digitCount > 0) {
+                int num = reverse % 10;
+                reverse /= 10;
                 digitCount--;
 
-                switch (num){
+                switch (num) {
                     case 0:
                         System.out.print("Zero\t");
                         break;
@@ -50,19 +50,20 @@ public class NumberToWords {
             }
         }
     }
-    public static int reverse(int number){
-      //  String rev = new StringBuilder(number).reverse().toString();
-       // System.out.println(rev);
-         int reverse=0;
-       // System.out.println(reverse);
-       // return 0;
-        while (number!=0){
-            int num=number%10;
-            reverse*=10;
-            reverse+=num;
-            number/=10;
+
+    public static int reverse(int number) {
+        //  String rev = new StringBuilder(number).reverse().toString();
+        // System.out.println(rev);
+        int reverse = 0;
+        // System.out.println(reverse);
+        // return 0;
+        while (number != 0) {
+            int num = number % 10;
+            reverse *= 10;
+            reverse += num;
+            number /= 10;
         }
-        System.out.println("reverse is "+reverse);
+        System.out.println("reverse is " + reverse);
         return reverse;
 
 //            int reverseNum = 0;
@@ -75,21 +76,20 @@ public class NumberToWords {
 //            System.out.println(reverseNum);
 //            return reverseNum;
 
-        }
+    }
 
 
-
-    public  static int getDigitCount(int number){
-        int count=0;
-        if(number<0){
+    public static int getDigitCount(int number) {
+        int count = 0;
+        if (number < 0) {
             return -1;
-        }else {
-            while (number!=0){
-                number/=10;
+        } else {
+            while (number != 0) {
+                number /= 10;
                 count++;
             }
         }
-        System.out.println("count "+count);
+        System.out.println("count " + count);
         return count;
     }
 }

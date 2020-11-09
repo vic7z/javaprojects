@@ -13,19 +13,19 @@ public class _function {
         System.out.println(apply1);
     }
 
-    public static boolean isEven(int num){
-        if(num%2==0){
+    public static boolean isEven(int num) {
+        if (num % 2 == 0) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
 
-    public static boolean isEven1(int num){
-        return (num%2==0)?true:false;
+    public static boolean isEven1(int num) {
+        return (num % 2 == 0) ? true : false;
     }
 
-    public static Function<Integer,Boolean> isEven2=num->(num%2==0);
-    public static BiFunction<Integer,Integer,Boolean> isLarge=(num1,num2)->(num1>num2);
+    public static Function<Integer, Boolean> isEven2 = num -> (num % 2 == 0);
+    public static BiFunction<Integer, Integer, Boolean> isLarge = (num1, num2) -> (num1 > num2);
 
 }

@@ -9,7 +9,7 @@ public class Student {
     private final String course;
     private Address address;
 
-    public static final Comparator<Student> nameOder=new Comparator<Student>() {
+    public static final Comparator<Student> nameOder = new Comparator<Student>() {
         @Override
         public int compare(Student o1, Student o2) {
             return o1.getName().compareToIgnoreCase(o2.getName());
@@ -20,7 +20,7 @@ public class Student {
         this.name = name;
         this.id = id;
         this.course = classNo;
-        this.address=address;
+        this.address = address;
     }
 
     public String getName() {
@@ -38,19 +38,20 @@ public class Student {
     @Override
     public boolean equals(Object obj) {
         System.out.println("equal called");
-      if(obj instanceof Student){
-          if(this.id==((Student) obj).id){
-              return true;
-          }
-      }
-          return false;
+        if (obj instanceof Student) {
+            if (this.id == ((Student) obj).id) {
+                return true;
+            }
+        }
+        return false;
 
     }
 
     public String getAddress() {
         return address.toString();
     }
-    public double getPhone(){
+
+    public double getPhone() {
         return address.getContactNo();
     }
 

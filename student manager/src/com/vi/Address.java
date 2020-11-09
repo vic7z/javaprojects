@@ -1,6 +1,6 @@
 package com.vi;
 
-public class Address{
+public class Address {
     private String StreetName;
     private String city;
     private double contactNo;
@@ -13,7 +13,7 @@ public class Address{
 
     @Override
     public String toString() {
-        return StreetName+":"+city;
+        return StreetName + ":" + city;
     }
 
     public double getContactNo() {

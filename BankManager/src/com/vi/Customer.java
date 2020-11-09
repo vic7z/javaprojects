@@ -7,10 +7,10 @@ public class Customer {
     private String phoneNumber;
     private ArrayList<Double> transaction;
 
-    public Customer(String name, String phoneNumber,double initialAmount) {
+    public Customer(String name, String phoneNumber, double initialAmount) {
         this.name = name;
         this.phoneNumber = phoneNumber;
-        this.transaction=new ArrayList<>();
+        this.transaction = new ArrayList<>();
         addTransaction(initialAmount);
     }
 
@@ -22,7 +22,7 @@ public class Customer {
         return phoneNumber;
     }
 
-    public void addTransaction(double transaction){
+    public void addTransaction(double transaction) {
         this.transaction.add(transaction);
     }
 

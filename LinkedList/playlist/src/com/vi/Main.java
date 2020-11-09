@@ -1,5 +1,7 @@
 package com.vi;
+
 import org.jetbrains.annotations.NotNull;
+
 import java.util.*;
 
 public class Main {
@@ -54,7 +56,7 @@ public class Main {
         ListIterator<Songs> songsListIterator = songs.listIterator();
         while (songsListIterator.hasNext()) {
             System.out.println(songsListIterator.next().toString());
-            
+
         }
     }
 
@@ -83,7 +85,7 @@ public class Main {
                 case 2:
                     System.out.println("[Q] to go back to main menu");
                     String fg = in.next();
-                    if ( fg.toLowerCase().equals("q") ) {
+                    if (fg.toLowerCase().equals("q")) {
                         flag = true;
 
                     }
@@ -100,7 +102,7 @@ public class Main {
     private static void addSongsToAlbum() {
         System.out.println("====Select an album to add songs to====");
         Iterator<Album> albumIterator = albums.listIterator();
-        if ( albums.isEmpty() ) {
+        if (albums.isEmpty()) {
             System.out.println("Please add an album first");
         } else {
             int i = 1;
@@ -122,7 +124,7 @@ public class Main {
                 System.out.println("[Q] to quit");
                 String f = in.next();
                 in.nextLine();
-                if ( f.toLowerCase().equals("q") ) {
+                if (f.toLowerCase().equals("q")) {
                     flag = !flag;
 
                 }
@@ -133,7 +135,7 @@ public class Main {
 
 
     private static void addSongsToPlaylist() {
-        if ( playLists.isEmpty() ) {
+        if (playLists.isEmpty()) {
             System.out.println("Please create a playList  first");
             printMainMenu();
             return;
@@ -154,14 +156,14 @@ public class Main {
             while (!flag) {
                 System.out.println("enter the song name");
                 String name = in.next();
-                if ( playLists.get(option).addToPlaylist(name) ) {
+                if (playLists.get(option).addToPlaylist(name)) {
                     System.out.println("the song " + name + "is added successfully to " + playLists.get(option).getPlaylistName());
                 } else {
                     System.out.println("Something went wrong ");
                 }
                 System.out.println("[Q] to quit");
                 String f = in.next();
-                if ( f.toLowerCase().equals("q") ) {
+                if (f.toLowerCase().equals("q")) {
                     flag = !flag;
 
                 }

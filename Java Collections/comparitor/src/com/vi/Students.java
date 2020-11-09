@@ -6,16 +6,16 @@ public class Students {
     private String name;
     private int rollNo;
 
-   static final Comparator<Students> nameOder;
-   static final Comparator<Students> rollNoOder;
+    static final Comparator<Students> nameOder;
+    static final Comparator<Students> rollNoOder;
 
     static {
         rollNoOder = new Comparator<Students>() {
             @Override
             public int compare(Students o1, Students o2) {
-                if ( o1.rollNo < o2.rollNo ) {
+                if (o1.rollNo < o2.rollNo) {
                     return -1;
-                } else if ( o1.rollNo > o2.rollNo ) {
+                } else if (o1.rollNo > o2.rollNo) {
                     return 1;
                 } else {
                     return 0;

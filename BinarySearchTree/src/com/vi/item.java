@@ -1,8 +1,8 @@
 package com.vi;
 
 public abstract class item {
-    protected item leftNode=null;
-    protected item rightNode=null;
+    protected item leftNode = null;
+    protected item rightNode = null;
     protected Object value;
 
     public item(Object value) {
@@ -10,9 +10,13 @@ public abstract class item {
     }
 
     abstract item leftChild();
+
     abstract item setLeft(item item);
+
     abstract item rightChild();
+
     abstract item setRight(item item);
+
     abstract int compareTo(item item);
 
     public void setValue(Object value) {

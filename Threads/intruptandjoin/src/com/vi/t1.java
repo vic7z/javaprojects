@@ -1,6 +1,6 @@
 package com.vi;
 
-public class t1 implements Runnable{
+public class t1 implements Runnable {
     @Override
     public void run() {
         try {

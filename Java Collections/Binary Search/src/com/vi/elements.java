@@ -9,6 +9,6 @@ public class elements implements Comparable<elements> {
 
     @Override
     public int compareTo(elements elements) {
-        return  this.id.compareToIgnoreCase(elements.id);
+        return this.id.compareToIgnoreCase(elements.id);
     }
 }
