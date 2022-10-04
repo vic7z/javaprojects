@@ -20,7 +20,7 @@ public class Main {
         printList(studentsList);
 
     }
-
+    System.out.println("=============================================");
     private static void printList(List<? extends Students> list) {
         for (Students student : list) {
             System.out.println(student.getName() + " : " + student.getRollNo());
